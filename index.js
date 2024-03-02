@@ -201,9 +201,7 @@ async function run() {
       }
     });
     
-    app.get('/', (req, res) => {
-      res.send('Users Management server is running');
-    });
+   
   } finally {
   }
 }
@@ -213,4 +211,7 @@ run().catch(console.log);
 
 app.listen(port, () => {
   console.log(`server is running on PORT: ${port}`);
+});
+app.get('/', (req, res) => {
+  res.send('Users Management server is running');
 });
