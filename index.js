@@ -80,7 +80,7 @@ async function run() {
       }
     });
     
-
+  
     
     
     app.post('/temporaryinfo', async (req, res) => {
@@ -201,7 +201,7 @@ async function run() {
       }
     });
     
-    app.get('/', verifyJWT, (req, res) => {
+    app.get('/', (req, res) => {
       res.send('Users Management server is running');
     });
   } finally {
